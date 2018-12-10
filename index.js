@@ -10,3 +10,5 @@ describe('Outer', () => {
   });
 
 });
+
+const it = (desc, fn) => describe(' ' + msg, fn)
