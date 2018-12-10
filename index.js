@@ -11,14 +11,16 @@ describe('Outer', () => {
 
 });
 
-const it = (desc, fn) => describe(' ' + msg, fn)
+const it = (msg, fn) => describe(' ' + msg, fn)
 
-const expect = (value) => { return };
+// const expect = (value) => { return };
+
+const expect = (exp) => matchers(exp)
 
 const matchers = (exp) => ({
   toBe: (assertion) => {
-    if (exp === assertion) => {
-      cosole.log('pass')
+    if (exp === assertion) {
+      console.log('pass')
       return true
     } else {
       console.log('fail')
@@ -27,7 +29,7 @@ const matchers = (exp) => ({
   }
 });
 
-function findAreaOfSquare(10) {
+function findAreaOfSquare(a) {
   return a * a
 };
 
