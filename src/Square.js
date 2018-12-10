@@ -1,3 +1,1 @@
-function findAreaOfSquare(a) {
-  return a * a;
-}
+const findAreaOfSquare = (a) => a * a 
