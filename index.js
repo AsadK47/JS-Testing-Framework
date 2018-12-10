@@ -12,3 +12,5 @@ describe('Outer', () => {
 });
 
 const it = (desc, fn) => describe(' ' + msg, fn)
+
+const expect = (value) => { return }
